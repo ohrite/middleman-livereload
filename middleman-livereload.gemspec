@@ -19,8 +19,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
   
-  s.add_runtime_dependency("middleman", ["~> 2.1.0"])
+  s.add_runtime_dependency("middleman-core", [">= 3.0.0.beta.2"])
   s.add_runtime_dependency('em-websocket', ['>= 0.2.0'])
-  s.add_runtime_dependency('multi_json', ['~> 1.0.3'])
+  s.add_runtime_dependency("multi_json", ['>= 1.2.0'])
   s.add_development_dependency("rake")
 end
